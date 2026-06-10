@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            
+            <div class="status-badge">
+                <span class="dot"></span> Open for QA Roles / Freelance
+            </div>
+
+            <h1>Angelica <span class="gradient-text">Veron</span></h1>
+            <p class="handle">Junior QA Engineer</p>
+
+            <p class="tagline">
+                Junior QA Engineer specializing in manual testing. Breaking software so your users won't.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <div class="social-icons">
+                    <a href="https://github.com/angelicaaaveron" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/angelica-veron-97964b32a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+                <span>scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="photo.jpeg" alt="Angelica Veron">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Angelica J. Veron</h3>
+                    <p class="about-subtitle">Junior QA Tester</p>
+
+                    <div class="summary">
+                        <h4><i class="fas fa-user"></i> Professional Summary</h4>
+                        <p>
+                            Detail-oriented and motivated fresh graduate with a degree in Information Technology,
+                            equipped with foundational knowledge in software quality assurance and testing
+                            methodologies. Demonstrates strong understanding of manual testing processes, including
+                            test case creation, test execution, bug tracking, and reporting. Familiar with SDLC and STLC, with
+                            hands-on experience in identifying defects and ensuring software functionality, usability, and
+                            reliability.
+                        </p>
+                    </div>
+
+                    <div class="education">
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        
+                        <div class="edu-item">
+                            <div class="edu-header">
+                                <strong>National Aviation Academy of the Philippines</strong>
+                                <span class="edu-year">2022 - 2026</span>
+                            </div>
+                            <p class="edu-detail">Bachelor of Science in Aviation Information Technology</p>
+                            <p class="edu-detail highlight">Magna Cum Laude</p>
+                        </div>
+
+                        <div class="edu-item">
+                            <div class="edu-header">
+                                <strong>Perpetual Help College of Manila</strong>
+                                <span class="edu-year">2016 - 2022</span>
+                            </div>
+                            <p class="edu-detail">Junior & Senior High School Department</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+
+            <h2 class="section-title">Featured <span class="gradient-text">Works</span></h2>
+
+            <!-- Two-column layout: My Projects | Sample Test Cases -->
+            <div class="projects-split">
+                
+                <!-- LEFT: My Projects -->
+                <div class="projects-split-left">
+                    <h3 class="subsection-title"><i class="fas fa-code-branch"></i> Projects</h3>
+                    <div class="projects-grid">
+                        
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-calculator"></i></div>
+                            <h3>Basic Calculator App</h3>
+                            <p>Developed a functional calculator using Android Studio that performs essential arithmetic operations, designed with a clean interface, optimized button layout, and smooth real-time computation.</p>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
+                            <h3>Unit Conversion App</h3>
+                            <p>Created a versatile unit converter app using Android Studio capable of converting measurements such as length, weight, and temperature, featuring an organized UI and accurate calculations.</p>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                            <h3>Snake Game App</h3>
+                            <p>Built a classic snake game app using Android Studio with responsive touch controls, smooth animations, score tracking, and a simple yet engaging interface.</p>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-icon"><i class="fas fa-walking"></i></div>
+                            <h3>StepSync</h3>
+                            <p>A mobile fitness app for students that counts steps with goals, calculates burn, distance travelled, and average speed. Features daily history tracking and uses Firebase for data storage.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- DIVIDER -->
+                <div class="projects-split-divider"></div>
+
+                <!-- RIGHT: Sample Test Cases -->
+                <div class="projects-split-right">
+                    <h3 class="subsection-title"><i class="fas fa-clipboard-list"></i> Sample Test Cases</h3>
+
+                    <!-- Engyro Website - Login -->
+                    <div class="test-case-group">
+                        <h4 class="test-case-app-title">
+                            <i class="fas fa-globe"></i> Engyro Website — Login
+                        </h4>
+                        <p class="test-case-desc">
+                            Sample test cases for the <strong>Website Login</strong> functionality.
+                        </p>
+                        <div class="table-wrapper">
+                            <table class="test-case-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Description</th>
+                                        <th>Steps to Reproduce</th>
+                                        <th>Expected Result</th>
+                                        <th>Actual Result</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>LOGIN-001</td>
+                                        <td>Verify login with valid credentials</td>
+                                        <td>1. Go to login page<br>2. Enter valid email & password<br>3. Click "Sign In"</td>
+                                        <td>Redirected to dashboard; welcome message shown</td>
+                                        <td>Redirected to dashboard; welcome message shown</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>LOGIN-002</td>
+                                        <td>Verify login with invalid email format</td>
+                                        <td>1. Go to login page<br>2. Enter "invalid-email"<br>3. Enter password<br>4. Click "Sign In"</td>
+                                        <td>Error "Please enter a valid email address" displayed</td>
+                                        <td>Error message displayed; no login attempt</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>LOGIN-003</td>
+                                        <td>Verify login with incorrect password</td>
+                                        <td>1. Go to login page<br>2. Enter valid email<br>3. Enter wrong password<br>4. Click "Sign In"</td>
+                                        <td>Error "Invalid email or password" displayed</td>
+                                        <td>Error message displayed as expected</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>LOGIN-004</td>
+                                        <td>Verify login with empty fields</td>
+                                        <td>1. Go to login page<br>2. Leave fields empty<br>3. Click "Sign In"</td>
+                                        <td>Validation prompts: "Email is required" & "Password is required"</td>
+                                        <td>Validation messages shown for both fields</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>LOGIN-005</td>
+                                        <td>Verify "Forgot Password" link</td>
+                                        <td>1. Go to login page<br>2. Click "Forgot Password?" link</td>
+                                        <td>Redirected to password reset page</td>
+                                        <td>Password reset page loaded</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>LOGIN-006</td>
+                                        <td>Verify password field masks input</td>
+                                        <td>1. Go to login page<br>2. Type in the password field</td>
+                                        <td>Characters masked as bullets/asterisks</td>
+                                        <td>All characters masked properly</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>LOGIN-007</td>
+                                        <td>Verify "Remember Me" persists session</td>
+                                        <td>1. Go to login page<br>2. Check "Remember Me"<br>3. Login successfully<br>4. Close & reopen browser</td>
+                                        <td>Email prefilled; user stays logged in</td>
+                                        <td>Email prefilled; session persisted</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- AR Application - Quiz -->
+                    <div class="test-case-group">
+                        <h4 class="test-case-app-title">
+                            <i class="fas fa-vr-cardboard"></i> Engyro AR — Student Quiz
+                        </h4>
+                        <p class="test-case-desc">
+                            Sample test cases for the <strong>AR mobile quiz</strong> after completing a lesson.
+                        </p>
+                        <div class="table-wrapper">
+                            <table class="test-case-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Description</th>
+                                        <th>Steps to Reproduce</th>
+                                        <th>Expected Result</th>
+                                        <th>Actual Result</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>QUIZ-001</td>
+                                        <td>Quiz loads after lesson completion</td>
+                                        <td>1. Complete an AR lesson<br>2. Tap "Take Quiz"</td>
+                                        <td>Quiz screen loads with questions & choices</td>
+                                        <td>Quiz loaded with all questions displayed</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>QUIZ-002</td>
+                                        <td>Correct answer shows green feedback</td>
+                                        <td>1. Load quiz<br>2. Tap the correct answer</td>
+                                        <td>Green highlight; "Correct!" feedback appears</td>
+                                        <td>Green highlight and correct feedback shown</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>QUIZ-003</td>
+                                        <td>Incorrect answer shows red feedback</td>
+                                        <td>1. Load quiz<br>2. Tap an incorrect answer</td>
+                                        <td>Red highlight; "Incorrect" feedback; correct answer revealed</td>
+                                        <td>Red highlight & correct answer shown</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>QUIZ-004</td>
+                                        <td>Cannot proceed without selecting answer</td>
+                                        <td>1. Load quiz<br>2. Don't select any answer<br>3. Tap "Next" / "Submit"</td>
+                                        <td>Button disabled or prompt "Please select an answer"</td>
+                                        <td>Validation prompt shown</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>QUIZ-005</td>
+                                        <td>Score displayed after completing quiz</td>
+                                        <td>1. Load quiz<br>2. Answer all questions<br>3. Tap "Submit"</td>
+                                        <td>Score screen: correct/total + percentage</td>
+                                        <td>Score correctly displayed (e.g., 4/5, 80%)</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>QUIZ-006</td>
+                                        <td>Quiz timer counts down and auto-submits</td>
+                                        <td>1. Load quiz<br>2. Observe countdown timer</td>
+                                        <td>Timer counts down; quiz auto-submits when time runs out</td>
+                                        <td>Timer counted down; auto-submitted correctly</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>QUIZ-007</td>
+                                        <td>Quiz results saved to student profile</td>
+                                        <td>1. Complete quiz<br>2. Go to profile / progress tab</td>
+                                        <td>Score + date recorded in progress history</td>
+                                        <td>Score reflected in progress history</td>
+                                        <td><span class="status-pass">PASS</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & <span class="gradient-text">Tools</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Python</span>
+                        <span>C#</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Development</h3>
+                    <div class="skill-tags">
+                        <span>Android Studio</span>
+                        <span>Visual Studio Code</span>
+                        <span>Apache Netbeans</span>
+                        <span>Netbeans</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span>XAMPP</span>
+                        <span>MS SQL</span>
+                        <span>MySQL</span>
+                        <span>MariaDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span>MS Office Suite</span>
+                        <span>Google Suite</span>
+                        <span>AI Tools</span>
+                        <span>Unity</span>
+                        <span>JIRA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Technical Writer and Quality Assurance Intern</h3>
+                            <span class="timeline-company">Lancaster Technology and Development</span>
+                            <span class="timeline-year">2025 - 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Quality Assurance Intern</h3>
+                            <span class="timeline-company">Dashboard Analytics Technology and Software Systems</span>
+                            <span class="timeline-year">2025 - 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Operational Support Intern</h3>
+                            <span class="timeline-company">Topserve Service Solutions, Inc.</span>
+                            <span class="timeline-year">2021 - 2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Help Desk Intern</h3>
+                            <span class="timeline-company">University Savings Bank, Inc.</span>
+                            <span class="timeline-year">2019 - 2020</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="contact-intro">Have a QA role or project in mind? Let's talk.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:angelicaaaveron@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>angelicaaaveron@gmail.com</span>
+                </a>
+                <a href="tel:+639627331971" class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <span>+63 962 733 1971</span>
+                </a>
+                <a href="https://github.com/angelicaaaveron" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/angelica-veron-97964b32a" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Angelica Veron. Built with purpose.</p>
+        </footer>
+    </section>
+
+</body>
+</html>
