@@ -689,7 +689,7 @@ footer p {
 }
 
 .test-case-table thead {
-    background: #0f1117;
+    background: rgba(0, 242, 254, 0.06);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -716,10 +716,6 @@ footer p {
 
 .test-case-table tbody tr {
     transition: background 0.2s;
-}
-
-.test-case-table tbody tr:first-child {
-    background: rgba(0, 242, 254, 0.06);
 }
 
 .test-case-table tbody tr:hover {
