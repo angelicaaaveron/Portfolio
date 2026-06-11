@@ -11,13 +11,18 @@
 <body>
 
     <header>
-        <nav>
+        <nav id="nav-menu">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
     <section class="hero">
@@ -451,6 +456,21 @@
             <p>&copy; 2026 Angelica Veron. Built with purpose.</p>
         </footer>
     </section>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
+    });
+
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('show');
+        });
+    });
+</script>
 
 </body>
 </html>
