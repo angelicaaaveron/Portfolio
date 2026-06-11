@@ -718,8 +718,12 @@ footer p {
     transition: background 0.2s;
 }
 
+.test-case-table tbody tr:first-child {
+    background: rgba(0, 242, 254, 0.06);
+}
+
 .test-case-table tbody tr:hover {
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(0, 242, 254, 0.04);
 }
 
 .test-case-table tbody tr:last-child td {
